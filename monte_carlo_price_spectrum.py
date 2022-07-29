@@ -6,7 +6,8 @@
 #                                                                                                                                                                          #                 
 ############################################################################################################################################################################
 #                                                                                                                                                                          # 
-#                         This routine calculate a series of most probable in a game theory of purchase with possible prices defined by a certain price range [a, b]       #                                                                                                                                           #        																										 
+#                         This routine calculate a series of most probable prices in a game theory of purchase with possible                                               #
+#                         prices defined by a certain price range [a, b], given a price start value s and attractive price interactions                                    #                                                                                                                                           #        																										 
 #                                                                                                                                                                          #             
 #  * :
 # 
@@ -50,8 +51,8 @@ price_sample = 0.0*sigma # Variable price sampling
 
 price = [] # Collect possible prices
 
-price_min = 25.0*sigma # Minimal price limit 
-price_max = 500.0*sigma # Maximal price limit
+price_min = 25.0*sigma # Minimal price limit in units of sigma
+price_max = 500.0*sigma # Maximal price limit in units of sigma
 
 L = 1000.0*sigma # Total price interval in units of sigma
 interaction_scale = 0.25*(price_max - price_min) # Correlation scale in units of LS (prefactor is defined by trade volume and number of trades)
@@ -78,6 +79,7 @@ for m in range(0, M) : # Average over number of trades
 
                 price.append(float(price_sample)) # Append prices to array
                 price_start = price_sample # If price for trade is accepted, set start price to accepted trade price
+
                 N_plus = N_plus + 1 # Count accepted trades
       
 print ' '
