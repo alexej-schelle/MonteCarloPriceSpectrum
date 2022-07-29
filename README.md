@@ -1,6 +1,7 @@
 # monte-carlo-price-spectrum
 
-Calculates the Monte Carlo spectrum of most probable prices in a given price range [a,b].
+Calculates the Monte Carlo spectrum of most probable prices in a given price range [a,b] with certain price 
+start value s and attractive price interaction forces.
 
 For installation, please replace the path '/path-to-figure/' with your installation path in line 79 of this code.
 
