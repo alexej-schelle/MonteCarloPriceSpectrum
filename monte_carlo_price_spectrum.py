@@ -6,8 +6,7 @@
 #                                                                                                                                                                          #                 
 ############################################################################################################################################################################
 #                                                                                                                                                                          # 
-#                         This routine calculate a series of most probable prices in a game theory of purchase with possible                                               #
-#                         prices defined by a certain price range [a, b], given a price start value s and attractive price interactions                                    #                                                                                                                                           #        																										 
+#                         This routine calculate a series of a most probable price spectrum in a game theory of purchase with possible prices defined by a certain price range [a, b]       #                                                                                                                                           #        																										 
 #                                                                                                                                                                          #             
 #  * :
 # 
@@ -43,16 +42,17 @@ import matplotlib.pyplot as plt
 import operator
 
 sigma = 1.0 # Absolute price uncertainty
-N = 3502 # Number of already registered reactions from trader (total number of trades)
-M = 1574 # Number of proposals from buyer (positive feedback)
-n_steps = 0 # Counter of numeric iteration steps
-price_start = 50.0*sigma # Start value of price sampling
+
+N = 100 # Number of already registered reactions from trader (total number of trades)
+M = 50 # Number of proposals from buyer (positive feedback)
+
+price_start = 25.0*sigma # Start value of price sampling
 price_sample = 0.0*sigma # Variable price sampling
 
 price = [] # Collect possible prices
 
-price_min = 25.0*sigma # Minimal price limit in units of sigma
-price_max = 500.0*sigma # Maximal price limit in units of sigma
+price_min = 25.0*sigma # Minimal price limit 
+price_max = 500.0*sigma # Maximal price limit
 
 L = 1000.0*sigma # Total price interval in units of sigma
 interaction_scale = 0.25*(price_max - price_min) # Correlation scale in units of LS (prefactor is defined by trade volume and number of trades)
@@ -60,40 +60,78 @@ interaction_scale = 0.25*(price_max - price_min) # Correlation scale in units of
 offset = 10.0 # Offset price value
 accuracy = 0.1 # Accuracy of the sample
 
-N_plus = 500 # Number of trades performed by trader (set to initial value)
+N_plus = 0 # Number of trades performed per realisation
+N_start = 100 # Number of trades performed initially by trader (set to initial value)
 
-number_of_trades = 10 # Number of trades you wish to take
+number_of_iterations = 1000 # Count the number of iterations for the Monte-Carlo Algorithm
+number_of_trades = 5 # Number of trades you wish to perform
 
-for m in range(0, M) : # Average over number of trades
+number_of_accepted_trades = []
+number_of_accepted_trades.append(0)
 
-    n_steps = n_steps + 1
-    print n_steps
+for n in range(0, number_of_iterations):
 
-    for l in range(0, N) :
+    N_plus = 0
+    print n
 
-        price_sample = random.uniform(offset + 0.5*sigma, offset + L - 0.5*sigma) # Generate random price sample in the interval [0,L]
+    for m in range(0, M) : # Average over number of trades
+    
+        for l in range(0, N) : # Average over number of offers
 
-        if (operator.gt(min(float(N_plus)/float(M),1.00),random.uniform(0, 1.0)) and math.fabs(price_sample - random.uniform(price_min, price_max)) < accuracy) : # Condition for trade acceptance
+            price_sample = random.uniform(offset + 0.5*sigma, -offset + L - 0.5*sigma) # Generate random price sample in the interval [0,L]
 
-            if (math.fabs(price_start - price_sample) < interaction_scale) : # Condition to choose prices
+            if (operator.gt(min(float(N_start)/float(M),1.00),random.uniform(0, 1.00)) and math.fabs(price_sample - random.uniform(price_min, price_max)) < accuracy) : # Condition for trade acceptance
 
-                price.append(float(price_sample)) # Append prices to array
-                price_start = price_sample # If price for trade is accepted, set start price to accepted trade price
+                if (math.fabs(price_start - price_sample) < interaction_scale) : # Condition to choose prices proposed by the buyer
 
-                N_plus = N_plus + 1 # Count accepted trades
-      
-print ' '
+                    price.append(float(price_sample)) # Append prices to array
+                    price_start = price_sample # If price for trade is accepted, set start price to accepted trade price
+
+                    N_plus = N_plus + 1 # Count accepted trades
+
+    number_of_accepted_trades.append(N_plus)
+
+x = ['']*number_of_trades
+price_optimal = ['']*number_of_trades
+occurences = ['']*number_of_iterations
+
+for l in range(0, number_of_iterations):
+
+    check_pass = 0
+    occurences[l] = 0
+
+    for k in range(0, number_of_trades):
+
+        x[k] = random.uniform(price_min, price_max)
+
+    for m in range(0, number_of_iterations):
+
+        check_pass = 0
+
+        for k in range(0, number_of_trades):
+        
+            if (float((math.fabs(x[k]) - float(price[number_of_accepted_trades[m] + k]))) < interaction_scale): check_pass = check_pass + 1    
+
+        if (check_pass == number_of_trades):
+
+            occurences[l] = occurences[l] + 1
+            
+result = np.argmax(occurences,axis=0)
+
+for k in range(0, number_of_trades):
+
+    price_optimal[k] = price[number_of_accepted_trades[result] + k]    
 
 for l in range(number_of_trades) :
     
-    print 'TOP ' + str(l) + ' price value : ' + str(price[l])
+    print 'TOP ' + str(l) + ' price value : ' + str(price_optimal[l])
 
 print ' '
 
 plt.figure(1)
-plt.hist(price, bins = 250, normed = True)
+plt.hist(price_optimal, bins = 250, normed = True)
 plt.tick_params(axis='both', which='major', labelsize = 16)
 plt.xlabel('price', fontsize = 18)
 plt.xlim([price_min, price_max])
 plt.ylim([0, 0.1])
-plt.savefig('/path_to_figure/fig_1.png')
+plt.savefig('/Users/dr.a.schelle/Desktop/Monte_Carlo_Price_Spectrum/fig_1.png')
