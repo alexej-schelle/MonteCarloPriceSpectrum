@@ -2,7 +2,9 @@
 
 The routine calculates a Monte Carlo spectrum of probable prices in a game theory of trade and purchase 
 of a product in a given price range [a,b] with certain price start value and attractive (static) price interaction force assuming 
-Poisson event distribution. In order to maximise your income with trading, choose a Monte Carlo price spectrum with maximal price sum.  
+Poisson event distribution. 
+
+The Monte Carlo price spectrum with maximal price sum is conjectured to be optimal for efficient trading.  
 
 For installation, please replace the path '/path-to-figure/' with your installation path in line 173 of this code.
 
