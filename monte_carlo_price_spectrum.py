@@ -6,8 +6,11 @@
 #                                                                                                                                                                          #                 
 ############################################################################################################################################################################
 #                                                                                                                                                                          # 
-#                         This routine calculates a realisation of a Monte Carlo Price Spectrum in a game theory of purchase with possible prices defined by a certain     #
-#                         price range [a, b] assuming Poisson distributed events. In order to maximise your profit, choose a realisation with maximum price sum.           #                                                                                                                    #                                                                                                                                           #        																										 
+# 
+#   The routine calculates a Monte Carlo spectrum of probable prices in a game theory of trade and purchase 
+#   of a product in a given price range [a,b] with certain price start value and attractive (static) price interaction force assuming 
+#   Poisson event distribution. In order to maximise your income with trading, choose a Monte Carlo price spectrum with maximal price sum.  
+#                                                                                                                                                                         #        																										 
 #                                                                                                                                                                          #             
 #  * :                                                                                                                                                                     #                 
 #                                                                                                                                                                          #                 
