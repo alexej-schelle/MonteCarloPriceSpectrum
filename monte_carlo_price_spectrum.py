@@ -7,7 +7,7 @@
 ############################################################################################################################################################################
 #                                                                                                                                                                          # 
 # 
-#   The routine calculates a Monte Carlo spectrum of probable prices in a game theory of trade and purchase 
+#   The routine calculates a Monte Carlo spectrum of probable prices in a game theory of retail trade and purchase 
 #   of a product in a given price range [a,b] with certain price start value and attractive (static) price interaction force assuming 
 #   a Poisson event distribution. 
 #
