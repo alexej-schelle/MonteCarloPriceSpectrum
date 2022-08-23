@@ -20,7 +20,7 @@
 #   License Copyright:  Dr. A. Schelle, Bachschmidstr. 4, 87600 Kaufbeuren                                                                                                 #
 #   License Type :      MIT license (2022)                                                                                                                                 #
 #   License Contact:    E-Mail : alexej.schelle@gmail.com                                                                                                                  #
-#                                                                                                                                                                          #             
+#  
 #   ** :                                                                                                                                                                   #             
 #                                                                                                                                                                          #                 
 #   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files                                       #
@@ -34,8 +34,9 @@
 #   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,          #
 #   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.             #
 #                                                                                                                                                                          #                 
-#                                                                                                                                                                          #     
-#                                                                                                                                                                          #             
+#   Free support is provided per email at support@krealix.de                                                                                                             # 
+#   For more explicit consulting and discussions, please schedule a meeting at https://calendly.com/alexej-schelle/                                                      #
+#                                                                                                                                                                          #                                                                                                                                                                            #             
 ############################################################################################################################################################################
 
 import os
