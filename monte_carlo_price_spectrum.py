@@ -7,11 +7,11 @@
 ############################################################################################################################################################################
 #                                                                                                                                                                          # 
 # 
-#   The routine calculates a Monte Carlo spectrum of probable prices in a game theory of retail trade and purchase 
+#   The routine calculates a Monte Carlo spectrum of most probable prices (for a defined sample size) in a game theory of retail trade and purchase 
 #   of a product in a given price range [a,b] with certain price start value and attractive (static) price interaction force assuming 
 #   a Poisson event distribution. 
 #
-#   The Monte Carlo price spectrum with maximal price sum is conjectured to be optimal for efficient trading.  
+#   The Monte Carlo price spectrum with maximal price sum is conjectured to be optimal for efficient trading in the given sample size.  
 #  
 #                                                                                                                                                                         #        																										 
 #                                                                                                                                                                          #             
