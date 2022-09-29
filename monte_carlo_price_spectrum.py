@@ -11,8 +11,9 @@
 #   trade and purchase of a product in a given overcountable price range [a,b] with certain price start value s (proposed from the trader) and attractive (static)         #
 #   price interaction force (from the buyer) assuming a Poisson event distribution.                                                                                        #
 #                                                                                                                                                                          #             
-#   The Monte Carlo price spectrum with maximal price sum is conjectured to be optimal (a Nash equilibrium) for efficient trading within the                               # 
-#   range of the given sample size.                                                                                                                                        #  
+#                                                                                                                                                                          #             
+#   The discrete Monte Carlo price spectrum with maximal price sum is conjectured to approximate an optimal trading strategy (a Nash equilibrium)                          # 
+#.  for efficient trading within the range of the given sample size.                                                                                                       #  
 #                                                                                                                                                                          #        																										 
 #                                                                                                                                                                          #             
 #  * :                                                                                                                                                                     #                 
