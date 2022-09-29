@@ -11,8 +11,10 @@
 #   purchase of a product in a given overcountable price range [a,b] with certain price start value s (defined by the average price of all traders in the game) and        #
 #   attractive (static) price interaction force (from the buyer), assuming a Poisson event distribution.                                                                   #
 #                                                                                                                                                                          #             
-#   The discrete Monte Carlo price spectrum with maximal price sum is conjectured to approximate an optimal trading strategy (a Nash equilibrium) for efficient            #
-#   trading within the range of the given sample size.                                                                                                                     #                                                                                                                   #        																										 
+#                                                                                                                                                                          # 
+#   The discrete Monte Carlo price spectrum with maximal price sum is conjectured to approximate an optimal trading strategy (a Nash equilibrium) for                      #
+#   efficient trading within the range of the given sample size, if the product is sold to the prices as defined by the Monte Carlo price spectrum.                        #
+#                                                                                                                                                                          #                                                                                                                   #        																										 
 #                                                                                                                                                                          #             
 #  * :                                                                                                                                                                     #                 
 #                                                                                                                                                                          #                 
