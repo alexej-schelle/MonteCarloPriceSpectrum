@@ -1,8 +1,5 @@
 MIT License
 
-This software version (developed in 2022/2023) represents a simple Monte Carlo price model for optimal 
-retail trading in terms of a price spectrum.
- 
 Copyright (c) 2022, Dr. A. Schelle, Bachschmidstr. 4, 87600 Kaufbeuren
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
