@@ -6,21 +6,21 @@
 #                                                                                                                                                                          #                 
 ############################################################################################################################################################################
 #                                                                                                                                                                          # 
-# 
-#   The routine calculates a Monte Carlo spectrum of most probable prices (for a defined sample size) in a game theory of retail trade and purchase 
-#   of a product in a given price range [a,b] with certain price start value and attractive (static) price interaction force assuming 
-#   a Poisson event distribution. 
-#
-#   The Monte Carlo price spectrum with maximal price sum is conjectured to be optimal for efficient trading in the given sample size.  
-#  
-#                                                                                                                                                                         #        																										 
+#                                                                                                                                                                          #             
+#   The routine calculates a discrete Monte Carlo spectrum of most probable prices (within a defined sample size) in a game theory of retail                               #
+#   trade and purchase of a product in a given overcountable price range [a,b] with certain price start value s (proposed from the trader) and attractive (static)         #
+#   price interaction force (from the buyer) assuming a Poisson event distribution.                                                                                        #
+#                                                                                                                                                                          #             
+#   The Monte Carlo price spectrum with maximal price sum is conjectured to be optimal (a Nash equilibrium) for efficient trading within the                               # 
+#   range of the given sample size.                                                                                                                                        #  
+#                                                                                                                                                                          #        																										 
 #                                                                                                                                                                          #             
 #  * :                                                                                                                                                                     #                 
 #                                                                                                                                                                          #                 
 #   License Copyright:  Dr. A. Schelle, Bachschmidstr. 4, 87600 Kaufbeuren                                                                                                 #
 #   License Type :      MIT license (2022)                                                                                                                                 #
 #   License Contact:    E-Mail : alexej.schelle@gmail.com                                                                                                                  #
-#  
+#                                                                                                                                                                          #             
 #   ** :                                                                                                                                                                   #             
 #                                                                                                                                                                          #                 
 #   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files                                       #
