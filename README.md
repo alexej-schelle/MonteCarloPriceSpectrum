@@ -1,6 +1,6 @@
 # monte-carlo-price-spectrum
 
-The routine calculates a discrete Monte Carlo spectrum of most probable prices (within a defined sample size) in a game theory of retail trade and purchase of a product in a given overcountable price range [a,b] with certain price start value s (proposed from the trader) and attractive (static) price interaction force (experienced by the buyer), assuming a Poisson event distribution. 
+The routine calculates a discrete Monte Carlo spectrum of most probable prices (within a defined sample size) in a game theory of retail trade and purchase of a product in a given overcountable price range [a,b] with certain price start value s (proposed by the trader) and attractive (static) price interaction force (experienced by the buyer), assuming a Poisson event distribution. 
 
 The discrete Monte Carlo price spectrum with maximal price sum is conjectured to approximate an optimal trading strategy (a Nash equilibrium) for efficient trading within the range of the given sample size.  
 
