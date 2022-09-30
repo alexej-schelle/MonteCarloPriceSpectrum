@@ -12,8 +12,8 @@
 #   attractive (static) price interaction force (experienced by the buyer), assuming a Poisson event distribution.                                                                   #
 #                                                                                                                                                                          #             
 #                                                                                                                                                                          # 
-#   The discrete Monte Carlo price spectrum with maximal price sum is conjectured to approximate an optimal trading strategy (a Nash equilibrium) for                      #
-#   efficient trading within the range of the given sample size.                                                                                                           #
+#   The discrete Monte Carlo price spectrum with maximal price sum is likely to approximate an optimal trading strategy (a Nash equilibrium) for                      #
+#   efficient trading within the range of the given sample size for a multiplayer game.                                                                                                           #
 #                                                                                                                                                                          #                                                                                                                   #        																										 
 #                                                                                                                                                                          #             
 #  * :                                                                                                                                                                     #                 
