@@ -174,5 +174,6 @@ for k in range(0, number_of_samples):
 plt.figure(1)
 plt.hist2d(price_final, price_initial, bins = 250, normed = True)
 plt.tick_params(axis='both', which='major', labelsize = 16)
-plt.xlabel('price', fontsize = 18)
+plt.xlabel('Optimal Price', fontsize = 18)
+plt.xlabel('Initial Price', fontsize = 18)
 plt.savefig('path-to-figure/fig_1.png')
