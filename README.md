@@ -2,7 +2,7 @@
 
 The routine calculates a discrete Monte Carlo spectrum of most probable prices (within a defined sample size) in a game theory of retail trade and purchase of a product in a given overcountable price range [a,b] with certain price start value s (agreed between trader and buyer) and attractive (static) price interaction force (experienced by the buyer), assuming a Poisson trade event distribution. 
 
-The resulting discrete Monte Carlo price spectrum with maximal price sum can be applied to numerically approximate an optimal trading strategy (a Nash equilibrium) for efficient trading within the range of the given sample size for a multiplayer game.  
+The resulting discrete Monte Carlo price spectrum with maximal price sum can be applied to numerically approximate an optimal trading strategy (Nash equilibrium) for efficient trading within the range of the given sample size for a multiplayer game.  
 
 For installation, please replace the path '/path-to-figure/' with your installation path in line 173 of this code.
 
@@ -28,3 +28,5 @@ For installation, please replace the path '/path-to-figure/' with your installat
 -3- : Free support is provided per email at support@krealix.de. 
    
 -4- : For more explicit consulting and discussions, please schedule a meeting at https://calendly.com/alexej-schelle/.  
+
+Note : Please note that besides that the Python routine works well, a rigorous mathematical proof for the approach to approxiamte a multiplayer Nash equlibrium is so far still missing.
