@@ -9,7 +9,7 @@ For installation, please replace the path '/path-to-figure/' with your installat
 -1- :
  
   License Copyright:  Dr. A. Schelle, Bachschmidstr. 4, 87600 Kaufbeuren 
-  License Type :      MIT license (2022)
+  License Type :      MIT license (2023)
   License Contact:    E-Mail : alexej.schelle@gmail.com
  
 -2- : 
