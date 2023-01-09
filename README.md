@@ -22,11 +22,11 @@ For installation, please replace the path '/path-to-figure/' with your installat
   The above copyright notice -1- and this permission notice -2- shall be included in all copies or substantial portions of the Software.
  
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR 
+  OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER       DEALINGS IN THE SOFTWARE.
 
 -3- : Free support is provided per email at support@krealix.de. 
    
 -4- : For more explicit consulting and discussions, please schedule a meeting at https://calendly.com/alexej-schelle/.  
 
-Note : Please note that besides that the Python routine works well, a rigorous mathematical proof for the approach to approxiamte a multiplayer Nash equlibrium is so far still missing.
+Note : Please note that, besides that the Python routine works well, a rigorous mathematical proof for the approach to approximate a multiplayer Nash equilibrium is so far still missing.
