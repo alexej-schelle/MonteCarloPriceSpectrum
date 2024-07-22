@@ -1,4 +1,4 @@
-# monte-carlo-price-spectrum
+# MonteCarloPriceSpectrum
 
 The routine calculates a discrete Monte Carlo spectrum of most probable prices (within a defined sample size) in a game theory of retail trade and purchase of a product in a given overcountable price range [a,b] with certain price start value s (agreed between trader and buyer) and attractive (static) price interaction force (experienced by the buyer), assuming a Poisson trade event distribution. 
 
